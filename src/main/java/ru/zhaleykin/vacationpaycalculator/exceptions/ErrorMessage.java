@@ -1,20 +1,3 @@
 package ru.zhaleykin.vacationpaycalculator.exceptions;
 
-public class ErrorMessage {
-
-    private final int status;
-    private final String message;
-
-    public ErrorMessage(int status, String message) {
-        this.status = status;
-        this.message = message;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public int getStatus() {
-        return status;
-    }
-}
+public record ErrorMessage(int status, String message){}
