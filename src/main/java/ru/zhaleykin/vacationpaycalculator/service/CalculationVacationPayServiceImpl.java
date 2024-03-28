@@ -28,7 +28,6 @@ public class CalculationVacationPayServiceImpl implements CalculationVacationPay
                 vacationDate = vacationDate.plusDays(1);
             }
         }
-        System.out.println(vacationDaysNumber);
         return calculateVacationPay(avgSalary, counter);
     }
 
