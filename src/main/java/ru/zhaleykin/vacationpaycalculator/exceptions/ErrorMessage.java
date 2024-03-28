@@ -2,11 +2,11 @@ package ru.zhaleykin.vacationpaycalculator.exceptions;
 
 public class ErrorMessage {
 
-    private final int statusCode;
+    private final int status;
     private final String message;
 
-    public ErrorMessage(int statusCode, String message) {
-        this.statusCode = statusCode;
+    public ErrorMessage(int status, String message) {
+        this.status = status;
         this.message = message;
     }
 
@@ -14,7 +14,7 @@ public class ErrorMessage {
         return message;
     }
 
-    public int getStatusCode() {
-        return statusCode;
+    public int getStatus() {
+        return status;
     }
 }
